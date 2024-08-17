@@ -1,7 +1,10 @@
 #!/bin/sh
 
+# Get the current directory name
+CURRENT_DIR=$(basename "$(pwd)")
+
 # Default output file name
-OUTPUT_FILE="codebase_analysis.txt"
+OUTPUT_FILE="codebase_analysis_${CURRENT_DIR}.txt"
 
 # Get the absolute path of the script
 SCRIPT_PATH=$(readlink -f "$0" 2>/dev/null || realpath "$0" 2>/dev/null || echo "$0")
