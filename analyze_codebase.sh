@@ -10,7 +10,7 @@ OUTPUT_FILE="codebase_analysis_${CURRENT_DIR}.txt"
 SCRIPT_PATH=$(readlink -f "$0" 2>/dev/null || realpath "$0" 2>/dev/null || echo "$0")
 
 # Default ignore patterns for common non-code files and directories
-DEFAULT_IGNORE_PATTERNS="node_modules venv .git .svn .idea .vscode __pycache__ *.pyc *.pyo *.class *.jar *.war *.ear *.zip *.tar *.gz *.rar *.exe *.dll *.so *.dylib *.bin *.obj *.o *.a *.lib *.out *.log *.sql *.sqlite *.db *.mdb *.pkl *.bak *.swp *.swo *.tmp *.temp *.DS_Store Thumbs.db *.min.js *.min.css package-lock.json yarn.lock Gemfile.lock Pipfile.lock composer.lock"
+DEFAULT_IGNORE_PATTERNS="node_modules target venv .git .svn .idea .vscode __pycache__ *.pyc *.pyo *.class *.jar *.war *.ear *.zip *.tar *.gz *.rar *.exe *.dll *.so *.dylib *.bin *.obj *.o *.a *.lib *.out *.log *.sql *.sqlite *.db *.mdb *.pkl *.bak *.swp *.swo *.tmp *.temp *.DS_Store Thumbs.db *.min.js *.min.css package-lock.json yarn.lock Gemfile.lock Pipfile.lock composer.lock"
 
 # Function to check if a file should be ignored
 should_ignore() {
